@@ -114,6 +114,14 @@
     .prova .lead{color:rgba(243,234,214,.85);max-width:680px;margin:18px auto 30px}
     .prova .btn-ghost{color:var(--creme-2);border-color:var(--dourado)}
     .prova .btn-ghost:hover{background:var(--dourado);color:var(--bordo)}
+    .depo-grid{column-count:4;column-gap:14px;margin:34px auto 30px;max-width:1000px}
+    .depo-grid img{width:100%;margin-bottom:14px;border-radius:10px;cursor:zoom-in;display:block;box-shadow:0 10px 26px -12px rgba(0,0,0,.55);transition:transform .15s;background:#fff}
+    .depo-grid img:hover{transform:scale(1.02)}
+    @media(max-width:860px){.depo-grid{column-count:2}}
+    @media(max-width:480px){.depo-grid{column-count:1;max-width:340px}}
+    .lb{position:fixed;inset:0;background:rgba(20,6,10,.93);display:none;align-items:center;justify-content:center;z-index:100;padding:20px;cursor:zoom-out}
+    .lb.open{display:flex}
+    .lb img{max-width:94%;max-height:92vh;border-radius:10px;box-shadow:0 20px 60px rgba(0,0,0,.6)}
 
     /* FAQ */
     .faq details{background:#fff;border:1px solid rgba(201,162,75,.4);border-radius:12px;margin-bottom:14px;padding:0 24px;overflow:hidden}
@@ -321,7 +329,23 @@
       <div class="stars">★★★★★</div>
       <p class="nota">5,0 no Google · avaliações reais de quem fez a travessia</p>
       <p class="lead">Eu poderia passar o dia aqui te falando do Método. Mas prefiro que quem já viveu te conte. Cada uma dessas mulheres um dia esteve mais ou menos onde você está agora.</p>
-      <a class="btn-ghost" href="https://www.google.com/search?q=Roseane+Sena+Constela%C3%A7%C3%A3o+S%C3%A3o+Jos%C3%A9+dos+Pinhais" target="_blank" rel="noopener">Ler as avaliações no Google</a>
+      <div class="depo-grid">
+        <img loading="lazy" src="assets/depoimentos/depo-01.jpg" alt="Depoimento de cliente" onclick="abrirLb(this.src)" />
+        <img loading="lazy" src="assets/depoimentos/depo-02.jpg" alt="Depoimento de cliente" onclick="abrirLb(this.src)" />
+        <img loading="lazy" src="assets/depoimentos/depo-03.jpg" alt="Avaliação no Google" onclick="abrirLb(this.src)" />
+        <img loading="lazy" src="assets/depoimentos/depo-04.jpg" alt="Depoimento de cliente" onclick="abrirLb(this.src)" />
+        <img loading="lazy" src="assets/depoimentos/depo-05.jpg" alt="Avaliação no Google" onclick="abrirLb(this.src)" />
+        <img loading="lazy" src="assets/depoimentos/depo-06.jpg" alt="Depoimento de cliente" onclick="abrirLb(this.src)" />
+        <img loading="lazy" src="assets/depoimentos/depo-07.jpg" alt="Depoimento de cliente" onclick="abrirLb(this.src)" />
+        <img loading="lazy" src="assets/depoimentos/depo-08.jpg" alt="Depoimento de cliente" onclick="abrirLb(this.src)" />
+        <img loading="lazy" src="assets/depoimentos/depo-09.jpg" alt="Depoimento de cliente" onclick="abrirLb(this.src)" />
+        <img loading="lazy" src="assets/depoimentos/depo-10.jpg" alt="Avaliação no Google" onclick="abrirLb(this.src)" />
+        <img loading="lazy" src="assets/depoimentos/depo-11.jpg" alt="Depoimento de cliente" onclick="abrirLb(this.src)" />
+        <img loading="lazy" src="assets/depoimentos/depo-12.jpg" alt="Depoimento de cliente" onclick="abrirLb(this.src)" />
+        <img loading="lazy" src="assets/depoimentos/depo-13.jpg" alt="Depoimento de cliente" onclick="abrirLb(this.src)" />
+      </div>
+      <p class="lead" style="margin-bottom:24px">Todas elas começaram com um primeiro passo — uma conversa, um encontro, uma escolha de olhar pra dentro. Se você quer que essa também vire a sua história, vamos conversar.</p>
+      <a class="btn-ghost" href="https://www.google.com/search?q=Roseane+Sena+Constela%C3%A7%C3%A3o+S%C3%A3o+Jos%C3%A9+dos+Pinhais" target="_blank" rel="noopener">Ver as avaliações no Google</a>
     </div>
   </section>
 
@@ -366,7 +390,7 @@
       <a class="btn" href="https://wa.me/554198016232?text=Ol%C3%A1%20Roseane!%20Vim%20pelo%20seu%20site%20e%20gostaria%20de%20conversar." target="_blank" rel="noopener">Chamar no WhatsApp</a>
       <div class="social">
         <a href="https://wa.me/554198016232" target="_blank" rel="noopener">WhatsApp · 41 9801-6232</a>
-        <a href="https://www.instagram.com/" target="_blank" rel="noopener" id="ig-link">Instagram</a>
+        <a href="https://www.instagram.com/roseane.sena_/" target="_blank" rel="noopener" id="ig-link">Instagram · @roseane.sena_</a>
         <a href="https://www.google.com/search?q=Roseane+Sena+Constela%C3%A7%C3%A3o+S%C3%A3o+Jos%C3%A9+dos+Pinhais" target="_blank" rel="noopener">Google · 5,0 ★</a>
       </div>
     </div>
@@ -385,6 +409,13 @@
   </footer>
 
   <a class="wa-float" href="https://wa.me/554198016232?text=Ol%C3%A1%20Roseane!%20Vim%20pelo%20seu%20site%20e%20gostaria%20de%20conversar." target="_blank" rel="noopener" aria-label="WhatsApp">✆</a>
+
+  <!-- Lightbox dos depoimentos -->
+  <div class="lb" id="lb" onclick="this.classList.remove('open')"><img id="lbimg" src="" alt="Depoimento ampliado" /></div>
+  <script>
+    function abrirLb(src){var lb=document.getElementById('lb');document.getElementById('lbimg').src=src;lb.classList.add('open');}
+    document.addEventListener('keydown',function(e){if(e.key==='Escape')document.getElementById('lb').classList.remove('open');});
+  </script>
 
 </body>
 </html>
