@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Roseane Sena — Constelação Familiar e Mentoria de Autoconhecimento | Método LAR</title>
+  <meta name="description" content="Roseane Sena, mentora de autoconhecimento e criadora do Método LAR. Constelação Familiar online e presencial em São José dos Pinhais. Para a mulher que se perdeu cuidando de todos, menos de si." />
+  <meta name="keywords" content="Constelação Familiar online, Constelação Familiar São José dos Pinhais, terapia sistêmica, autoconhecimento, Método LAR, Roseane Sena" />
+  <link rel="canonical" href="https://roseanesena.com/" />
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Roseane Sena — Constelação Familiar e Método LAR" />
+  <meta property="og:description" content="Por fora você dá conta. Por dentro, um vazio que você não sabe explicar. Te conduzo de volta pra você." />
+  <meta property="og:image" content="https://roseanesena.com/assets/roseane.jpg" />
+  <meta property="og:locale" content="pt_BR" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&family=Lora:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet" />
+
+  <style>
+    :root{
+      --bordo:#4A1420; --bordo-2:#6B1620; --creme:#F3EAD6; --creme-2:#FBF6EC;
+      --dourado:#C9A24B; --dourado-2:#BFA15A; --texto:#2b2b2b; --suave:#6b5b4b;
+    }
+    *{box-sizing:border-box;margin:0;padding:0}
+    html{scroll-behavior:smooth}
+    body{background:var(--creme);color:var(--texto);font-family:'Lora',Georgia,serif;line-height:1.75;font-size:17px}
+    h1,h2,h3,.serif{font-family:'Playfair Display',Georgia,serif;font-weight:600;line-height:1.2;color:var(--bordo)}
+    a{color:var(--bordo);text-decoration:none}
+    .wrap{max-width:1080px;margin:0 auto;padding:0 24px}
+    section{padding:84px 0}
+    .eyebrow{font-family:'Lora',serif;font-style:italic;color:var(--dourado-2);letter-spacing:.5px;font-size:1.05rem;margin-bottom:10px}
+    h2{font-size:2.1rem;margin-bottom:8px}
+    .lead{font-size:1.15rem;color:var(--suave)}
+    .btn{display:inline-block;background:var(--bordo);color:var(--creme-2);padding:15px 30px;border-radius:40px;font-family:'Lora',serif;font-weight:600;font-size:1.02rem;letter-spacing:.3px;transition:transform .15s, box-shadow .15s, background .15s;box-shadow:0 8px 24px -10px rgba(74,20,32,.6)}
+    .btn:hover{transform:translateY(-2px);background:var(--bordo-2);box-shadow:0 12px 30px -10px rgba(74,20,32,.7)}
+    .btn-ghost{background:transparent;color:var(--bordo);border:1.5px solid var(--dourado);box-shadow:none}
+    .btn-ghost:hover{background:var(--dourado);color:#fff}
+    .center{text-align:center}
+
+    /* NAV */
+    header.nav{position:sticky;top:0;z-index:50;background:rgba(243,234,214,.92);backdrop-filter:blur(8px);border-bottom:1px solid rgba(201,162,75,.35)}
+    .nav-in{display:flex;align-items:center;justify-content:space-between;height:72px}
+    .nav-in img{height:46px;width:auto}
+    nav.links{display:flex;gap:26px;align-items:center}
+    nav.links a{font-size:.96rem;color:var(--bordo);opacity:.85}
+    nav.links a:hover{opacity:1;color:var(--dourado-2)}
+    .nav-wa{background:var(--bordo);color:var(--creme-2);padding:9px 18px;border-radius:30px;font-weight:600;font-size:.92rem}
+    .nav-wa:hover{background:var(--bordo-2);color:var(--creme-2)}
+    .burger{display:none;font-size:1.6rem;background:none;border:none;color:var(--bordo);cursor:pointer}
+
+    /* HERO */
+    .hero{background:linear-gradient(160deg,#FBF6EC 0%,#F3EAD6 70%);padding:70px 0 90px}
+    .hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:48px;align-items:center}
+    .hero h1{font-size:3rem;margin-bottom:22px}
+    .hero h1 .gold{color:var(--dourado-2);font-style:italic}
+    .hero p.sub{font-size:1.22rem;color:var(--suave);margin-bottom:14px}
+    .hero .sig{font-style:italic;color:var(--bordo-2);margin-bottom:28px;font-size:1.05rem}
+    .hero-photo{position:relative}
+    .hero-photo img{width:100%;border-radius:14px;box-shadow:0 24px 60px -20px rgba(74,20,32,.45);border:5px solid #fff}
+    .hero-photo::after{content:"";position:absolute;inset:14px -14px -14px 14px;border:2px solid var(--dourado);border-radius:14px;z-index:-1}
+
+    /* divisor com frase-assinatura */
+    .quote-band{background:var(--bordo);color:var(--creme-2);text-align:center;padding:54px 24px}
+    .quote-band p{font-family:'Playfair Display',serif;font-style:italic;font-size:1.6rem;color:var(--creme-2);max-width:760px;margin:0 auto;line-height:1.4}
+    .quote-band span{color:var(--dourado)}
+
+    /* SOBRE */
+    .sobre-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:48px;align-items:start}
+    .sobre-grid img{width:100%;border-radius:14px;box-shadow:0 20px 50px -22px rgba(74,20,32,.4);position:sticky;top:96px}
+    .sobre-text p{margin-bottom:16px}
+    .sobre-text p.strong{font-size:1.15rem;color:var(--bordo);font-family:'Playfair Display',serif}
+
+    /* METODO */
+    .metodo{background:var(--creme-2)}
+    .lar{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:40px}
+    .fase{background:#fff;border:1px solid rgba(201,162,75,.4);border-radius:14px;padding:30px 26px;position:relative;overflow:hidden}
+    .fase .letra{font-family:'Playfair Display',serif;font-size:4.5rem;color:var(--dourado);opacity:.45;line-height:.8;position:absolute;top:14px;right:18px}
+    .fase h3{font-size:1.45rem;margin-bottom:6px}
+    .fase .comodo{font-style:italic;color:var(--dourado-2);margin-bottom:12px;font-size:.98rem}
+    .fase p{font-size:.98rem;color:var(--suave)}
+    .metodo .nota{margin-top:34px;text-align:center;color:var(--suave);font-style:italic;max-width:720px;margin-left:auto;margin-right:auto}
+
+    /* SERVICOS */
+    .servicos-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:22px;margin-top:40px}
+    .card{background:#fff;border:1px solid rgba(201,162,75,.4);border-radius:14px;padding:26px;display:flex;flex-direction:column}
+    .card h3{font-size:1.3rem;margin-bottom:4px}
+    .card .preco{font-family:'Playfair Display',serif;color:var(--dourado-2);font-size:1.5rem;margin:6px 0 12px}
+    .card p{font-size:.98rem;color:var(--suave);margin-bottom:18px;flex:1}
+    .card .tag{display:inline-block;background:var(--creme);color:var(--bordo);font-size:.78rem;font-weight:600;padding:4px 12px;border-radius:20px;margin-bottom:12px;letter-spacing:.4px;text-transform:uppercase}
+    .card .btn{align-self:flex-start;padding:11px 22px;font-size:.94rem}
+    .card.destino{background:linear-gradient(160deg,#5a1826,#4A1420);border:none}
+    .card.destino h3,.card.destino .preco{color:var(--creme-2)}
+    .card.destino p{color:rgba(243,234,214,.85)}
+    .card.destino .tag{background:var(--dourado);color:var(--bordo)}
+    .card.destino .btn{background:var(--dourado);color:var(--bordo)}
+    .card.destino .btn:hover{background:#d8b35f}
+
+    /* EVENTOS */
+    .evento{display:grid;grid-template-columns:auto 1fr auto;gap:28px;align-items:center;background:#fff;border:1px solid rgba(201,162,75,.4);border-left:5px solid var(--dourado);border-radius:14px;padding:26px 30px;margin-top:24px}
+    .evento .data{text-align:center;background:var(--bordo);color:var(--creme-2);border-radius:12px;padding:14px 20px;min-width:96px}
+    .evento .data .dia{font-family:'Playfair Display',serif;font-size:2.2rem;line-height:1}
+    .evento .data .mes{text-transform:uppercase;letter-spacing:1px;font-size:.8rem}
+    .evento h3{font-size:1.3rem;margin-bottom:4px}
+    .evento p{color:var(--suave);font-size:.98rem}
+    @media(max-width:640px){.evento{grid-template-columns:1fr;text-align:center}.evento .data{margin:0 auto}}
+
+    /* DEPOIMENTOS */
+    .prova{background:var(--bordo);color:var(--creme-2);text-align:center}
+    .prova h2{color:var(--creme-2)}
+    .prova .stars{font-size:2.4rem;color:var(--dourado);letter-spacing:4px;margin:6px 0}
+    .prova .nota{font-family:'Playfair Display',serif;font-size:1.4rem;color:var(--creme-2)}
+    .prova .lead{color:rgba(243,234,214,.85);max-width:680px;margin:18px auto 30px}
+    .prova .btn-ghost{color:var(--creme-2);border-color:var(--dourado)}
+    .prova .btn-ghost:hover{background:var(--dourado);color:var(--bordo)}
+
+    /* FAQ */
+    .faq details{background:#fff;border:1px solid rgba(201,162,75,.4);border-radius:12px;margin-bottom:14px;padding:0 24px;overflow:hidden}
+    .faq summary{cursor:pointer;padding:20px 0;font-family:'Playfair Display',serif;font-size:1.12rem;color:var(--bordo);list-style:none;display:flex;justify-content:space-between;align-items:center}
+    .faq summary::-webkit-details-marker{display:none}
+    .faq summary::after{content:"+";color:var(--dourado);font-size:1.6rem;font-family:'Lora',serif}
+    .faq details[open] summary::after{content:"–"}
+    .faq details p{padding:0 0 22px;color:var(--suave);font-size:1rem}
+
+    /* CONTATO / RODAPE */
+    .contato{background:linear-gradient(160deg,#FBF6EC,#F3EAD6);text-align:center}
+    .contato h2{font-size:2.3rem;margin-bottom:10px}
+    .contato .lead{max-width:620px;margin:0 auto 28px}
+    .social{display:flex;gap:18px;justify-content:center;margin-top:26px;flex-wrap:wrap}
+    .social a{color:var(--bordo);border:1.5px solid var(--dourado);border-radius:30px;padding:10px 22px;font-size:.95rem}
+    .social a:hover{background:var(--dourado);color:#fff}
+    footer.fim{background:var(--bordo);color:rgba(243,234,214,.8);padding:44px 0 30px;text-align:center;font-size:.9rem}
+    footer.fim img{height:64px;margin-bottom:14px}
+    footer.fim a{color:var(--dourado)}
+    footer.fim .disc{max-width:720px;margin:18px auto 0;font-size:.82rem;color:rgba(243,234,214,.55);line-height:1.6}
+
+    /* WhatsApp flutuante */
+    .wa-float{position:fixed;right:20px;bottom:20px;z-index:60;background:#25D366;color:#fff;width:58px;height:58px;border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 8px 24px -6px rgba(0,0,0,.4);font-size:1.7rem}
+    .wa-float:hover{transform:scale(1.06)}
+
+    @media(max-width:860px){
+      nav.links{display:none}
+      .burger{display:block}
+      .hero-grid,.sobre-grid{grid-template-columns:1fr}
+      .hero h1{font-size:2.3rem}
+      .hero-photo{order:-1;max-width:360px;margin:0 auto}
+      .lar,.servicos-grid{grid-template-columns:1fr}
+      .sobre-grid img{position:static;max-width:340px;margin:0 auto}
+      section{padding:60px 0}
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAV -->
+  <header class="nav">
+    <div class="wrap nav-in">
+      <a href="#topo"><img src="assets/logo.png" alt="Roseane Sena — Método LAR" /></a>
+      <nav class="links">
+        <a href="#sobre">Sobre</a>
+        <a href="#metodo">Método LAR</a>
+        <a href="#servicos">Serviços</a>
+        <a href="#encontros">Encontros</a>
+        <a href="#depoimentos">Elas contam</a>
+        <a class="nav-wa" href="https://wa.me/554198016232?text=Ol%C3%A1%20Roseane!%20Vim%20pelo%20seu%20site%20e%20gostaria%20de%20conversar." target="_blank" rel="noopener">Vamos conversar</a>
+      </nav>
+      <button class="burger" aria-label="menu" onclick="document.querySelector('nav.links').style.display = (getComputedStyle(document.querySelector('nav.links')).display==='none')?'flex':'none'">☰</button>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero" id="topo">
+    <div class="wrap hero-grid">
+      <div>
+        <p class="eyebrow">Constelação Familiar · Mentora de autoconhecimento</p>
+        <h1>Por fora você dá conta.<br>Por dentro, um <span class="gold">vazio</span> que você não sabe explicar.</h1>
+        <p class="sub">Te conduzo de volta pra você.</p>
+        <p class="sig">Criadora do Método LAR.</p>
+        <a class="btn" href="https://wa.me/554198016232?text=Ol%C3%A1%20Roseane!%20Vim%20pelo%20seu%20site%20e%20gostaria%20de%20conversar." target="_blank" rel="noopener">Vamos conversar ↓</a>
+      </div>
+      <div class="hero-photo">
+        <img src="assets/roseane.jpg" alt="Roseane Sena" />
+      </div>
+    </div>
+  </section>
+
+  <!-- FRASE ASSINATURA -->
+  <div class="quote-band">
+    <p>“A história que te quebrou não começou em você.<br>Mas voltar pra <span>ti</span>, isso é seu pra fazer.”</p>
+  </div>
+
+  <!-- SOBRE -->
+  <section id="sobre">
+    <div class="wrap sobre-grid">
+      <img src="assets/roseane-2.jpg" alt="Roseane Sena" />
+      <div class="sobre-text">
+        <p class="eyebrow">Sobre mim</p>
+        <h2>Eu morei nesse vazio por muito tempo.</h2>
+        <br>
+        <p class="strong">Você dá conta de tudo. Do trabalho, da casa, de todo mundo. Mas quando tudo silencia, sobra um vazio que você não consegue explicar.</p>
+        <p>Sou Roseane Sena, mentora de autoconhecimento e criadora do Método LAR. Hoje conduzo mulheres de volta pra casa — pra dentro de si mesmas. Mas pra te contar como cheguei aqui, preciso voltar um pouco.</p>
+        <p>Cresci aprendendo cedo que, pra ser amada, eu tinha que cuidar. Pais separados. Um pai que se perdeu no álcool. E uma menina que foi se apagando pra não incomodar. Levei isso pra vida adulta sem perceber: dava tudo pros outros e quase nada pra mim. Até o dia em que o corpo e a alma avisaram que assim não dava mais.</p>
+        <p>Foi aí que começou minha travessia de volta. Desci até a raiz do que eu carregava, fiz as pazes com a minha história e restaurei a casa que era minha. Esse caminho virou método: o LAR — Liberação, Acolhimento e Restauração. É por ele que hoje conduzo mulheres que se perderam cuidando de todos, menos de si.</p>
+        <p>Faço isso porque sei o que é cuidar da casa do mundo inteiro e dormir sem teto. E porque nenhuma mulher deveria descobrir sozinha que a casa é dela. A história que te quebrou não começou em você. Mas voltar pra ti, isso é seu pra fazer. E não precisa ser sozinha.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- METODO LAR -->
+  <section class="metodo" id="metodo">
+    <div class="wrap">
+      <div class="center">
+        <p class="eyebrow">A casa como caminho</p>
+        <h2>O Método LAR</h2>
+        <p class="lead">Liberação · Acolhimento · Restauração. Três fases pra você voltar a habitar a casa que é sua — você mesma.</p>
+      </div>
+      <div class="lar">
+        <div class="fase">
+          <span class="letra">L</span>
+          <h3>Liberação</h3>
+          <p class="comodo">O porão — onde fica o que pesa</p>
+          <p>Descer até a raiz e iluminar o que ficou guardado. Soltar o que você carrega e que nunca foi seu. A pergunta aqui é: “o que estou carregando que não me pertence?”</p>
+        </div>
+        <div class="fase">
+          <span class="letra">A</span>
+          <h3>Acolhimento</h3>
+          <p class="comodo">O sótão e o coração da casa</p>
+          <p>Encontrar os padrões herdados da sua linhagem e fazer as pazes com a sua história. Reconectar com a sua essência e dar a si mesma o que você buscou nos outros.</p>
+        </div>
+        <div class="fase">
+          <span class="letra">R</span>
+          <h3>Restauração</h3>
+          <p class="comodo">Reformar e, enfim, habitar</p>
+          <p>Construir novos limites e direção. Não é dar conta de mais coisas — é parar de carregar o que não é seu e voltar a se sentir viva. Morar em si mesma como dona.</p>
+        </div>
+      </div>
+      <p class="nota">“O que você não olha, se repete. O que você reconhece, se transforma.”</p>
+    </div>
+  </section>
+
+  <!-- SERVICOS -->
+  <section id="servicos">
+    <div class="wrap">
+      <div class="center">
+        <p class="eyebrow">Como trabalho</p>
+        <h2>Caminhos pra começar</h2>
+        <p class="lead">Cada encontro é um passo de volta pra dentro de você. Comece pela porta que faz sentido pra agora.</p>
+      </div>
+      <div class="servicos-grid">
+        <div class="card">
+          <span class="tag">Porta de entrada</span>
+          <h3>Constelação Familiar online</h3>
+          <div class="preco">R$ 350</div>
+          <p>Encontro individual, de onde você estiver. Revela as dinâmicas do seu sistema familiar — o que se repete, o que pesa, o que ainda pede um lugar — e abre espaço pra novos movimentos.</p>
+          <a class="btn" href="https://wa.me/554198016232?text=Ol%C3%A1%20Roseane!%20Quero%20agendar%20uma%20Constela%C3%A7%C3%A3o%20Familiar%20online." target="_blank" rel="noopener">Quero agendar</a>
+        </div>
+        <div class="card">
+          <span class="tag">Presencial · grupo</span>
+          <h3>Constelação em grupo (SJP)</h3>
+          <div class="preco">R$ 300</div>
+          <p>Encontro presencial em São José dos Pinhais, em grupo pequeno e cuidado. Participar como representante: R$ 60. Próxima data na seção de encontros.</p>
+          <a class="btn" href="https://wa.me/554198016232?text=Ol%C3%A1%20Roseane!%20Quero%20participar%20da%20pr%C3%B3xima%20Constela%C3%A7%C3%A3o%20presencial%20em%20grupo." target="_blank" rel="noopener">Quero participar</a>
+        </div>
+        <div class="card">
+          <span class="tag">Conexão com o sagrado</span>
+          <h3>Aura Master · online</h3>
+          <div class="preco">R$ 250</div>
+          <p>Uma prática de leitura e harmonização energética, como parte do cuidado integrado com a sua essência.</p>
+          <a class="btn" href="https://wa.me/554198016232?text=Ol%C3%A1%20Roseane!%20Tenho%20interesse%20no%20Aura%20Master." target="_blank" rel="noopener">Tenho interesse</a>
+        </div>
+        <div class="card">
+          <span class="tag">Energia · online</span>
+          <h3>Reiki · online</h3>
+          <div class="preco">R$ 150</div>
+          <p>Um momento de acolhimento e reequilíbrio energético, à distância, pra reencontrar um pouco de paz no corpo.</p>
+          <a class="btn" href="https://wa.me/554198016232?text=Ol%C3%A1%20Roseane!%20Tenho%20interesse%20no%20Reiki%20online." target="_blank" rel="noopener">Tenho interesse</a>
+        </div>
+        <div class="card">
+          <span class="tag">Aprofundamento</span>
+          <h3>Tríade Essencial</h3>
+          <div class="preco">R$ 600</div>
+          <p>Três encontros de base sistêmica pra ir além da porta de entrada — quando você sente que quer começar a ir mais fundo, com continuidade.</p>
+          <a class="btn" href="https://wa.me/554198016232?text=Ol%C3%A1%20Roseane!%20Quero%20saber%20mais%20sobre%20a%20Tr%C3%ADade%20Essencial." target="_blank" rel="noopener">Saber mais</a>
+        </div>
+        <div class="card destino">
+          <span class="tag">A travessia completa</span>
+          <h3>Mentoria Casa Interior</h3>
+          <div class="preco">Sob aplicação</div>
+          <p>O caminho completo pelas três fases do Método LAR, no seu tempo. Entrada seletiva — começa por uma conversa pra entender onde você está e se esse caminho é pra você.</p>
+          <a class="btn" href="https://wa.me/554198016232?text=Ol%C3%A1%20Roseane!%20Quero%20me%20candidatar%20%C3%A0%20Mentoria%20Casa%20Interior." target="_blank" rel="noopener">Aplique-se</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ENCONTROS -->
+  <section class="metodo" id="encontros">
+    <div class="wrap">
+      <div class="center">
+        <p class="eyebrow">Próximos encontros</p>
+        <h2>Vem pro próximo</h2>
+        <p class="lead">Os encontros presenciais acontecem em São José dos Pinhais, em grupo pequeno. Online, sob demanda — de onde você estiver.</p>
+      </div>
+      <div class="evento">
+        <div class="data"><div class="dia">18</div><div class="mes">Jun</div></div>
+        <div>
+          <h3>Encontro de Integração Sistêmica · Constelação Familiar</h3>
+          <p>Quinta-feira, 19h30 · Coworking VivaMente, São José dos Pinhais. Grupo pequeno de propósito — cada mulher precisa de espaço e de cuidado. Participe constelando (R$ 300) ou como representante (R$ 60).</p>
+        </div>
+        <a class="btn" href="https://wa.me/554198016232?text=Ol%C3%A1%20Roseane!%20Quero%20garantir%20minha%20vaga%20no%20encontro%20de%2018%2F06." target="_blank" rel="noopener">Garantir vaga</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- DEPOIMENTOS -->
+  <section class="prova" id="depoimentos">
+    <div class="wrap">
+      <p class="eyebrow" style="color:var(--dourado)">Elas contam</p>
+      <h2>Quem já viveu, conta melhor que eu</h2>
+      <div class="stars">★★★★★</div>
+      <p class="nota">5,0 no Google · avaliações reais de quem fez a travessia</p>
+      <p class="lead">Eu poderia passar o dia aqui te falando do Método. Mas prefiro que quem já viveu te conte. Cada uma dessas mulheres um dia esteve mais ou menos onde você está agora.</p>
+      <a class="btn-ghost" href="https://www.google.com/search?q=Roseane+Sena+Constela%C3%A7%C3%A3o+S%C3%A3o+Jos%C3%A9+dos+Pinhais" target="_blank" rel="noopener">Ler as avaliações no Google</a>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq">
+    <div class="wrap" style="max-width:820px">
+      <div class="center">
+        <p class="eyebrow">Dúvidas comuns</p>
+        <h2>Perguntas frequentes</h2>
+      </div>
+      <div class="faq" style="margin-top:36px">
+        <details open>
+          <summary>Você atende online ou presencial?</summary>
+          <p>Os dois. A Constelação Familiar individual e as práticas de Reiki e Aura Master são online — de onde você estiver, em qualquer lugar do Brasil. Os encontros de Constelação em grupo são presenciais, aqui em São José dos Pinhais.</p>
+        </details>
+        <details>
+          <summary>Como funciona a Constelação Familiar?</summary>
+          <p>Não é sobre falar do problema. É sobre ver. A gente revela as dinâmicas do seu sistema familiar — o que se repete, o que pesa, o que ainda pede um lugar — pra você reconhecer de onde vem aquele padrão e sentir, no corpo, o alívio de colocar cada coisa no seu lugar. Você sai diferente de como entrou.</p>
+        </details>
+        <details>
+          <summary>Preciso saber o que vou trabalhar antes?</summary>
+          <p>Não. Você não precisa chegar com tudo claro. Esse encontro é justamente pra enxergar o que normalmente fica invisível. Basta vir com disposição de olhar — mesmo que dê um friozinho na barriga.</p>
+        </details>
+        <details>
+          <summary>Qual a diferença entre uma sessão e a Mentoria Casa Interior?</summary>
+          <p>A Constelação é a porta de entrada — um primeiro movimento. A Mentoria Casa Interior é a travessia completa: percorremos juntas as três fases do Método LAR (Liberação, Acolhimento e Restauração), no seu tempo. A entrada é seletiva e começa por uma conversa.</p>
+        </details>
+        <details>
+          <summary>Esse trabalho substitui acompanhamento médico ou psicológico?</summary>
+          <p>Não. É um trabalho de desenvolvimento pessoal e autoconhecimento, de natureza integrativa e complementar. Ele não substitui acompanhamento médico, psicológico ou de qualquer profissional de saúde.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTATO -->
+  <section class="contato" id="contato">
+    <div class="wrap">
+      <p class="eyebrow">Vamos conversar</p>
+      <h2>O primeiro passo é uma conversa</h2>
+      <p class="lead">Se você se reconheceu em alguma dessas palavras, talvez não seja por acaso. Me chama — no seu tempo, do seu jeito. Eu te espero.</p>
+      <a class="btn" href="https://wa.me/554198016232?text=Ol%C3%A1%20Roseane!%20Vim%20pelo%20seu%20site%20e%20gostaria%20de%20conversar." target="_blank" rel="noopener">Chamar no WhatsApp</a>
+      <div class="social">
+        <a href="https://wa.me/554198016232" target="_blank" rel="noopener">WhatsApp · 41 9801-6232</a>
+        <a href="https://www.instagram.com/" target="_blank" rel="noopener" id="ig-link">Instagram</a>
+        <a href="https://www.google.com/search?q=Roseane+Sena+Constela%C3%A7%C3%A3o+S%C3%A3o+Jos%C3%A9+dos+Pinhais" target="_blank" rel="noopener">Google · 5,0 ★</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- RODAPE -->
+  <footer class="fim">
+    <div class="wrap">
+      <img src="assets/logo-dark.png" alt="Roseane Sena — Método LAR" />
+      <p><strong style="color:var(--creme)">Roseane Sena</strong> · Mentora de autoconhecimento · Terapeuta integrativa</p>
+      <p>Constelação Familiar online e presencial · São José dos Pinhais/PR</p>
+      <p style="margin-top:10px"><a href="politica-de-privacidade.html">Política de Privacidade</a></p>
+      <p class="disc">Este é um trabalho de desenvolvimento pessoal e autoconhecimento, de natureza integrativa e complementar. Não constitui e não substitui acompanhamento médico, psicológico ou tratamento de saúde. Os resultados variam de pessoa para pessoa.</p>
+      <p style="margin-top:16px;font-size:.8rem">© 2026 Roseane Sena. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <a class="wa-float" href="https://wa.me/554198016232?text=Ol%C3%A1%20Roseane!%20Vim%20pelo%20seu%20site%20e%20gostaria%20de%20conversar." target="_blank" rel="noopener" aria-label="WhatsApp">✆</a>
+
+</body>
+</html>
